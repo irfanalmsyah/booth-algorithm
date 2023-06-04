@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Booth Multiplication Step by Step</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+</head>
+<body>
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col-6">
+                <div class="row">
+                    <div class="fs-1">Booth Multiplication <span id="bit">0</span> Bit</div>
+                </div>
+                <div class="row">
+                    <div class="fs-4">step by step</div>
+                </div>
+            </div>
+            <div class="col">
+                <label for="input-multiplicand">Multiplicand</label>
+                <input type="number" id="input-multiplicand" class="form-control" />
+            </div>
+            <div class="col">
+                <label for="input-multiplier">Multiplier</label>
+                <input type="number" id="input-multiplier" class="form-control" />
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+            </div>
+            <div class="col">
+            </div>
+        </div>
+        
+        <table class="table table-striped mt-4 text-center">
+            <thead>
+                <tr>
+                    <th scope="col">Accumulator (A)</th>
+                    <th scope="col">Multiplier (Q)</th>
+                    <th scope="col">(Q<sub>-1</sub>)</th>
+                    <th scope="col">Multiplicand (M)</th>
+                    <th scope="col">Description</th>
+                </tr>
+            </thead>
+            <tbody id="table">
+                <!-- Table body content goes here -->
+            </tbody>
+        </table>
+
+        <div id="no-step" class="text-center lead mt-3">
+            Input your multiplicand or multiplier and the steps will be shown here
+        </div>
+        
+        <div id="concate"></div>
+        <div id="twos"></div>
+        <div id="answer-text"></div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
